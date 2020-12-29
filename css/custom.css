@@ -1,0 +1,71 @@
+.bg-black {
+    background-color: black; 
+}
+
+.profilePic {
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.hr-p {
+    width: 20%;
+}  
+
+.hr-c {
+    width: 75%;
+}
+
+.navbar, .jumbotron, .footer, .copyright, .modal1 {
+    background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.contact {
+    width: 500px;
+} 
+
+.portfolio-item-caption {
+    opacity: 0;
+}
+
+.portItem {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.portCaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portItem:hover > .portCaption {
+    opacity: 1;
+    background: rgba(0,0,0,0.7);
+    transition-duration: 0.5s;
+}
+
+.portImgModal {
+    border-radius: 8%;
+}
+
+.img-svg {
+    width: 50px;
+    height: 50px;
+}
+
+.portCaption > button {
+    height: 100%;
+}
+
+.b2 {
+    height: 100%;
+    width: 100%;
+}
+

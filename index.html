@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Family -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/efects.css">
+
+
+    <title>AC Portfolio</title>
+  </head>
+  <body>
+        <div class="row" id="ac"> <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
+                <div class="container">
+                    <a class="navbar-brand fw-bolder" href="#ac">AC</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item text-end">
+                            <a class="nav-link active" aria-current="page" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item text-end">
+                            <a class="nav-link active" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item text-end">
+                            <a class="nav-link active" href="#contactForm">CONTACT</a>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+        </div> <!-- /Navbar -->
+        <div class="jumbotron text-white bg-black"> <!-- Jumbotron -->
+            <div class="container d-flex justify-content-center flex-column pt-5">
+                <img class="profilePic mt-5 mb-3 mx-auto rounded-50" src="assets/img/profile.jpg" alt="profile picture">
+                <h2 class="mx-auto w-100 display-6 text-center">const AC = </h2>
+                <h3 class="mx-auto w-100 display-5 text-center">"Alejandro Capote";</h3>
+                <hr class="w-50 b-5 mx-auto">
+                <p class="text-center mb-5">/* Front-End Web Developer, Content Creator and Product Manager */</p>
+            </div>
+        </div><!-- /Jumbotron -->
+        <div class="row container mx-auto" id="portfolio">
+            <div class="container">
+                <div>
+                    <h3 class="display-5 mt-5 fw-bolder text-center">PORTFOLIO</h3>
+                    <hr class="hr-p b-5 mx-auto mb-5">
+                </div>
+                <div class="row justify-content-center"><!-- Portfolio -->
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-3">
+
+                        <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p1">
+                                    Web App Dashboard
+                                </button>
+                            </div>
+                            <img class="portImg img-fluid rounded" src="assets/img/portfolio/webapp.png" alt=""/>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p2">
+                                        Registration Form
+                                    </button>
+                                </div>
+                                <img class="portImg img-fluid rounded" src="assets/img/portfolio/regform.png" alt=""/>
+                            </div>
+                        </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p3">
+                                        Game Show App
+                                    </button>
+                                </div>
+                                <img class="portImg img-fluid rounded" src="assets/img/portfolio/gameshowapp.png" alt=""/>
+                            </div>
+                        </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p4">
+                                        Image Gallery
+                                    </button>
+                                </div>
+                                <img class="portImg img-fluid rounded" src="assets/img/portfolio/imggallery.png" alt=""/>
+                            </div>
+                        </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p5">
+                                        Web Style Guide SCSS
+                                    </button>
+                                </div>
+                                <img class="portImg img-fluid rounded" src="assets/img/portfolio/webguidestyle.png" alt=""/>
+                            </div>
+                        </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p6">
+                                        Employee Directoy API
+                                    </button>
+                                </div>
+                                <img class="portImg img-fluid rounded" src="assets/img/portfolio/empdirectory.png" alt=""/>
+                            </div>
+                        </div>
+            </div>
+            </div>
+            </div><!-- /Portfolio -->  
+
+        <div id="about" class="row mt-5 row container mx-auto"><!-- About -->
+            <div class="container d-flex justify-content-center flex-column">
+                <h3 class="display-5 mt-5 fw-bolder text-center">ABOUT</h3>
+                <hr class="hr-p b-5 mx-auto mb-5">
+                <p class="mb-3">
+                        I'm a Product Manager, Photographer, Content creator, Freelancer, Forever Student, and Developer. I love to build and create things, thus my love for programming. 
+                        <br>
+                        <br>
+                        Since I was a kid, and my dad got his first IBM Computer, I have sat there and learned all I could -back in Cuba-. At the age of 15, I built my first WebSite, using HTML, with some flash Templates in Adobe Dreamweaver. 
+                        <br>
+                        <br>
+                        Then in University classes like Logic & Algorithm, C, Pascal, C++, Matlab, Circuit Design, and Technical Drawing became my favorites. 
+                        <br>
+                        <br>
+                        It's been four years in the United States working as a Product Manager, Developing Skills like Team Leadership, and learning how to reach customer satisfaction, at every level I can imagine. Two years ago, I have decided that it was time to start working on my Web Developer Dream again. And So I did. 
+                        <br>
+                        <br>
+                        Now my goal is to pursue a full-time job position as a Front End Web Developer. To put at service my skills, and at the same time to develop new ones, all with the idea to become an expert in the field, and the best employee I can be.
+                </p>
+                <div>
+                        <br>
+                        <br>
+                    <p class="blockquote-footer text-center">If you want to know more about my Web-Dev Journey, check my Instagram | +20K Followers </p>
+                </div>
+                <div class="w-10 mx-auto mt-3">
+                    <a class="btn btn-xl btn-outline-dark" href="https://startbootstrap.com/theme/freelancer/" target="_blank"><i class="fas fa-download mr-2" ></i>
+                    Resume Download
+                    </a>
+                    <a class="btn btn-xl btn-outline-dark" href="https://www.instagram.com/alexkpot/" target="_blank"><i class="fab fa-instagram mr-2"></i>
+                    My Journey So Far
+                    </a>
+                </div>
+            </div>
+            
+        </div><!-- /About -->
+        <!-- Contact -->
+        <form id="contactForm" action="mailto:alexkpotp@gmail.com" method="post" enctype="text/plain" class="row mt-5 row container mx-auto needs-validation" novalidate><!-- Contact -->
+            <div class="contact d-flex justify-content-center flex-column container">
+                <h3 class="display-5 mt-5 fw-bolder text-center">CONTACT ME</h3>
+                <hr class="hr-c b-5 mx-auto mb-3">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                    <div class="invalid-feedback">
+                            Please fill your Name
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">
+                            Please fill your Email
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="" class="form-control" id="phone">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                    <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                    </div>
+                </div>
+                <div id="success"></div>
+                <div class="col-12 mt-3 mb-5 text-center">
+                    <button id="sendMessageButton" class="btn btn-outline-dark" type="submit">                                
+                        <i class="fas fa-paper-plane"></i>
+                        Send
+                    </button>
+                </div>
+            </div>
+        </form><!-- /Contact -->
+
+    <footer class="footer text-center pt-5 pb-5 text-white"> <!-- Footer -->
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">Location</h5>
+                        <p class=" mb-0">
+                            South Florida
+                            <br />
+                            United States
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h5 class="text-uppercase mb-4">Social</h5>
+                        <a class="btn  border-0 btn-outline-light btn-social mx-1" href="https://www.instagram.com/alexkpot/"><i class="fab fa-fw fa-instagram"></i></a>
+                        <a class="btn  border-0 btn-outline-light btn-social mx-1" href="https://github.com/ManuelCapote"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn  border-0 btn-outline-light btn-social mx-1" href="https://unsplash.com/@ialexkpot"><i class="fab fa-fw fa-unsplash"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- /Footer -->
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright ©  AlexKpot 2020</small></div>
+    </div>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div class="scroll-to-top d-lg-none position-fixed">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+    <div><!-- Modal Window -->
+        <!-- Modal 1 -->
+        <div class="modal fade" id="p1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg"> 
+                <div class="modal-content">
+                    <div class="modal-header mx-auto mt-3">
+                        <h3 class="modal-title text-center" id="exampleModalLabel">Web App Dashboard</h3>
+                    </div>
+                <div class="modal-body">
+                        <img class="portImgModal p-5 img-fluid" src="assets/img/portfolio/webapp.png" alt=""/>
+                        <div class="d-flex pb-3">
+                                <ul class="list-group fw-light list-group-horizontal mx-auto">
+                                    <li class="list-group-item">Local Storage With JS</li>
+                                    <li class="list-group-item">CSS Grid Layout</li>
+                                    <li class="list-group-item">SVG Animation</li>
+                                </ul>
+                        </div>
+                        <p class="pb-3 text-center">Interactive Dashboard for a Web Application, using advanced web techniques including SVG graphics, and JavaScript programming.</p>
+                        <div class="d-flex justify-content-around pt-3 flex-row">
+                            <img class="img-svg img-fluid" src="assets/svgicons/javascript-4.svg" alt="svg javascript-4 icon">
+                            <img class="img-svg img-fluid" src="assets/svgicons/css3.svg" alt="svg css3 icon">
+                            <img class="img-svg img-fluid" src="assets/svgicons/html-5.svg" alt="svg html-5 icon">
+
+                        </div>
+                </div>
+                    <div class="modal-footer mx-auto">
+                            <a class="btn btn-xl btn-outline-dark" href="https://manuelcapote.github.io/Web-App-Dashboard/" target="_blank">See Full Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>      
+        <!-- Modal 2 -->
+        <div class="modal fade" id="p2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> 
+                    <div class="modal-content">
+                        <div class="modal-header mx-auto mt-3">
+                            <h3 class="modal-title text-center" id="exampleModalLabel">Registration Form</h3>
+                        </div>
+                    <div class="modal-body">
+                            <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/regform.png" alt=""/>
+                            <div class="d-flex pb-3">
+                                    <ul class="list-group fw-light list-group-horizontal mx-auto">
+                                        <li class="list-group-item">HTML Forms</li>
+                                        <li class="list-group-item">CSS Selectors</li>
+                                        <li class="list-group-item">Flexbox Layout</li>
+                                        <li class="list-group-item">Form Validation</li>
+                                    </ul>
+                            </div>
+                            <p class="pb-3 text-center">Responsive, mobile-friendly registration form, using a wide variety of HTML form inputs types and attributes.</p>
+                            <div class="d-flex justify-content-around pt-3 flex-row">
+                                <img class="img-svg img-fluid" src="assets/svgicons/javascript-4.svg" alt="svg javascript-4 icon">
+                                <img class="img-svg img-fluid" src="assets/svgicons/css3.svg" alt="svg css3 icon">
+                                <img class="img-svg img-fluid" src="assets/svgicons/html-5.svg" alt="svg html-5 icon">
+                            </div>
+                    </div>
+                        <div class="modal-footer mx-auto text-center">
+                                <a class="btn btn-xl btn-outline-dark" href="https://manuelcapote.github.io/Online-Registration-Form/" target="_blank">See Full Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+            <!-- Modal 3 -->
+        <div class="modal fade" id="p3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> 
+                    <div class="modal-content">
+                        <div class="modal-header mx-auto mt-3">
+                            <h3 class="modal-title text-center" id="exampleModalLabel">Game Show App</h3>
+                        </div>
+                    <div class="modal-body">
+                            <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/gameshowapp.png" alt=""/>
+                            <div class="d-flex pb-3">
+                                    <ul class="list-group fw-light list-group-horizontal d-flex flex-wrap justify-content-around mx-auto">
+                                        <li class="list-group-item">Arrow Functions</li>
+                                        <li class="list-group-item">Traversing the DOM</li>
+                                        <li class="list-group-item">JS Conditionals</li>
+                                        <li class="list-group-item">Template Literals</li>
+                                    </ul>
+                            </div>
+                            <p class="pb-3 text-center">A browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase. 
+                                Using Javascript, I have created an array of phrases and write functions to choose a random phrase from that array, split the phrase into letters, and put those letters onto the game board.</p>
+                            <div class="d-flex justify-content-around pt-3 flex-row">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/javascript-4.svg" alt="svg javascript-4 icon">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/css3.svg" alt="svg css3 icon">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/html-5.svg" alt="svg html-5 icon">
+                            </div>
+                    </div>
+                        <div class="modal-footer mx-auto">
+                                <a class="btn btn-xl btn-outline-dark" href="https://manuelcapote.github.io/gameshowapp/" target="_blank">See Full Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+               <!-- Modal 4 -->
+        <div class="modal fade" id="p4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> 
+                    <div class="modal-content">
+                        <div class="modal-header mx-auto mt-3">
+                            <h3 class="modal-title text-center" id="exampleModalLabel">Image Gallery</h3>
+                        </div>
+                    <div class="modal-body">
+                            <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/imggallery.png" alt=""/>
+                            <div class="d-flex pb-3">
+                                    <ul class="list-group fw-light list-group-horizontal d-flex flex-wrap justify-content-around mx-auto">
+                                        <li class="list-group-item">jQuery Basics</li>
+                                        <li class="list-group-item">JS Loops, Arrays, Objects</li>
+                                        <li class="list-group-item">jQuery Plugins</li>
+                                    </ul>
+                            </div>
+                            <p class="pb-3 text-center"> A minimalist Interactive and Searchable Image Gallery, a common feature of many websites, from photo sites to e-commerce applications.</p>
+                            <div class="d-flex justify-content-around pt-3 flex-row">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/javascript-4.svg" alt="svg javascript-4 icon">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/css3.svg" alt="svg css3 icon">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/html-5.svg" alt="svg html-5 icon">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/jquery.svg" alt="svg jQuery icon">
+
+                            </div>
+                    </div>
+                        <div class="modal-footer mx-auto">
+                                <a class="btn btn-xl btn-outline-dark" href="https://manuelcapote.github.io/imagegallery/" target="_blank">See Full Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+               <!-- Modal 5 -->
+        <div class="modal fade" id="p5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> 
+                    <div class="modal-content">
+                        <div class="modal-header mx-auto mt-3">
+                            <h3 class="modal-title text-center" id="exampleModalLabel">Web Style Guide</h3>
+                        </div>
+                    <div class="modal-body">
+                            <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/webguidestyle.png" alt=""/>
+                            <div class="d-flex pb-3">
+                                    <ul class="list-group fw-light list-group-horizontal d-flex flex-wrap justify-content-around mx-auto">
+                                        <li class="list-group-item">SASS Basics</li>
+                                        <li class="list-group-item">CSS Transitions and Transforms</li>
+                                        <li class="list-group-item">CSS Media Queries</li>
+                                    </ul>
+                            </div>
+                            <p class="pb-3 text-center">A Style Guide that acts as your own personal Bootstrap, you can drop into any project to speed up styling, layout and development in general.</p>
+                            <div class="d-flex justify-content-around pt-3 flex-row">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/javascript-4.svg" alt="svg javascript-4 icon">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/css3.svg" alt="svg css3 icon">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/html-5.svg" alt="svg html-5 icon">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/sass-1.svg" alt="svg SASS icon">
+                            </div>
+                    </div>
+                        <div class="modal-footer mx-auto">
+                                <a class="btn btn-xl btn-outline-dark" href="https://manuelcapote.github.io/WebStyleGuide/" target="_blank">See Full Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+                 <!-- Modal 6 -->
+        <div class="modal fade" id="p6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg"> 
+                    <div class="modal-content">
+                        <div class="modal-header mx-auto mt-3">
+                            <h3 class="modal-title text-center" id="exampleModalLabel">Employee Directory API</h3>
+                        </div>
+                    <div class="modal-body">
+                            <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/empdirectory.png" alt=""/>
+                            <div class="d-flex pb-3">
+                                    <ul class="list-group fw-light list-group-horizontal d-flex flex-wrap justify-content-around mx-auto">
+                                        <li class="list-group-item">Object Oriented JS</li>
+                                        <li class="list-group-item">aSync Programming</li>
+                                        <li class="list-group-item">AJAX Basics</li>
+                                        <li class="list-group-item">Fetch API</li>
+                                    </ul>
+                            </div>
+                            <p class="pb-3 text-center">A Employee Directory that comunicates with a third-party API (Application Programming Interface). It also filters employees by letters. </p>
+                            <div class="d-flex justify-content-around pt-3 flex-row">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/javascript-4.svg" alt="svg javascript-4 icon">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/css3.svg" alt="svg css3 icon">
+                                    <img class="img-svg img-fluid" src="assets/svgicons/html-5.svg" alt="svg html-5 icon">
+                            </div>
+                    </div>
+                        <div class="modal-footer mx-auto">
+                                <a class="btn btn-xl btn-outline-dark" href="https://manuelcapote.github.io/employeedirectory/" target="_blank">See Full Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+            
+            
+    </div><!-- /Modal Window -->
+
+    <!-- Option: Local Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+  </body>
+</html>
