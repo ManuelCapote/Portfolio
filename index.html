@@ -10,54 +10,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/efects.css">
 
 
-    <title>AC Portfolio</title>
+    <title>AC</title>
   </head>
   <body>
-        <div class="row" id="ac"> <!-- Navbar -->
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
-                <div class="container">
-                    <a class="navbar-brand fw-bolder" href="#ac">AC</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item text-end">
-                            <a class="nav-link active" aria-current="page" href="#portfolio">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item text-end">
-                            <a class="nav-link active" href="#about">ABOUT</a>
-                        </li>
-                        <li class="nav-item text-end">
-                            <a class="nav-link active" href="#contactForm">CONTACT</a>
-                        </li>
-                    </div>
+        <header>
+            <div class="coverDiv">
+                <div class="svgLogoBox mx-auto">
+                    <img class="svgLogo mx-auto pb-3" src="assets/svgicons/Logo2.svg" alt="">
+                    <p class="text-white display-5 mx-auto">Capstone Portfolio</p>
                 </div>
-            </nav>
-        </div> <!-- /Navbar -->
-        <div class="jumbotron text-white bg-black"> <!-- Jumbotron -->
-            <div class="container d-flex justify-content-center flex-column pt-5">
-                <img class="profilePic mt-5 mb-3 mx-auto rounded-50" src="assets/img/profile.jpg" alt="profile picture">
-                <h2 class="mx-auto w-100 display-6 text-center">const AC = </h2>
-                <h3 class="mx-auto w-100 display-5 text-center">"Alejandro Capote";</h3>
-                <hr class="w-50 b-5 mx-auto">
-                <p class="text-center mb-5">/* Front-End Web Developer, Content Creator and Product Manager */</p>
+                    <div id="scroll" class="mx-auto scrollCont mb-5 pb-5">
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                    </div>
+
             </div>
-        </div><!-- /Jumbotron -->
+            <div class="row navBarCont" id="ac"> <!-- Navbar -->
+                <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+                    <div class="container">
+                        <a class="navbar-brand fw-bolder" href="#ac">AC</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item text-end">
+                                <a class="nav-link active" aria-current="page" href="#portfolio">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link active" href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link active" href="#contactForm">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+
+                </nav>
+            </div> <!-- /Navbar -->
+            <div class="jumbotron text-white"> <!-- Jumbotron -->
+                <div class="container d-flex justify-content-center flex-column pt-5">
+                    <img class="profilePic mt-5 mb-3 mx-auto rounded-50" src="assets/img/profile.jpg" alt="profile picture">
+                    <h2 class="mx-auto w-100 display-6 text-center">const AC = </h2>
+                    <h3 class="mx-auto w-100 display-5 text-center">Alejandro Capote</h3>
+                    <hr class="w-50 b-5 mx-auto">
+                    <p class="text-center text-smoke mb-5 pb-5">Front-End Web Developer | Content Creator | Product Manager</p>
+                </div>
+            </div><!-- /Jumbotron -->
+        </header>
         <div class="row container mx-auto" id="portfolio">
             <div class="container">
                 <div>
-                    <h3 class="display-5 mt-5 fw-bolder text-center">PORTFOLIO</h3>
-                    <hr class="hr-p b-5 mx-auto mb-5">
+                    <h3 class="display-5 mt-5 text-white fw-bolder text-center">PORTFOLIO</h3>
+                    <hr class="hr-p b-5 mx-auto text-white mb-5">
                 </div>
                 <div class="row justify-content-center"><!-- Portfolio -->
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="col-md-6 col-lg-4 mb-3 order-2">
 
                         <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                             <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -69,7 +84,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="col-md-6 col-lg-4 mb-3 order-3">
                             <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                                 <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p2">
@@ -80,7 +95,7 @@
                             </div>
                         </div>
                     <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="col-md-6 col-lg-4 mb-3 order-4">
                             <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                                 <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p3">
@@ -91,7 +106,7 @@
                             </div>
                         </div>
                     <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="col-md-6 col-lg-4 mb-3 order-5">
                             <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                                 <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p4">
@@ -102,7 +117,7 @@
                             </div>
                         </div>
                     <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="col-md-6 col-lg-4 mb-3 order-6">
                             <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                                 <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p5">
@@ -113,14 +128,14 @@
                             </div>
                         </div>
                     <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="col-md-6 col-lg-4 mb-3 order-1">
                             <div class="portItem portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                                 <div class="portCaption portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <button type="button" class="h-100 w-100 btn portCaptionCont portfolio-item-caption-content text-center text-white" data-bs-toggle="modal" data-bs-target="#p6">
                                         Employee Directoy API
                                     </button>
                                 </div>
-                                <img class="portImg img-fluid rounded" src="assets/img/portfolio/empdirectory.png" alt=""/>
+                                <img class="portImg img-fluid rounded" src="assets/img/portfolio/empdirectoy.png" alt=""/>
                             </div>
                         </div>
             </div>
@@ -129,13 +144,13 @@
 
         <div id="about" class="row mt-5 row container mx-auto"><!-- About -->
             <div class="container d-flex justify-content-center flex-column">
-                <h3 class="display-5 mt-5 fw-bolder text-center">ABOUT</h3>
-                <hr class="hr-p b-5 mx-auto mb-5">
-                <p class="mb-3">
-                        I'm a Product Manager, Photographer, Content creator, Freelancer, Forever Student, and Developer. I love to build and create things, thus my love for programming. 
+                <h3 class="display-5 mt-5 fw-bolder text-white text-center">ABOUT</h3>
+                <hr class="hr-p b-5 mx-auto text-white mb-5">
+                <p class="mb-3 text-white">
+                        I'm a Developer, Product Manager, Photographer, Content creator, Freelancer, and a Forever Student. I love to build and create things, thus my love for programming. 
                         <br>
                         <br>
-                        Since I was a kid, and my dad got his first IBM Computer, I have sat there and learned all I could -back in Cuba-. At the age of 15, I built my first WebSite, using HTML, with some flash Templates in Adobe Dreamweaver. 
+                        Since I was a kid, and my dad got his first IBM Computer, I have sat there and learned all I could. At the age of 15, I built my first WebSite, using HTML, with some flash Templates in Adobe Dreamweaver. 
                         <br>
                         <br>
                         Then in University classes like Logic & Algorithm, C, Pascal, C++, Matlab, Circuit Design, and Technical Drawing became my favorites. 
@@ -149,13 +164,13 @@
                 <div>
                         <br>
                         <br>
-                    <p class="blockquote-footer text-center">If you want to know more about my Web-Dev Journey, check my Instagram | +20K Followers </p>
+                    <p class="blockquote-footer text-center">If you want to know more about my Web-Dev Journey, check my Instagram | +19K Followers </p>
                 </div>
                 <div class="w-10 mx-auto mt-3">
-                    <a class="btn btn-xl btn-outline-dark" href="https://startbootstrap.com/theme/freelancer/" target="_blank"><i class="fas fa-download mr-2" ></i>
+                    <a class="btn btn-xl btn-outline-light" href="https://www.icloud.com/iclouddrive/0b-QJ8tRzRVbY4X3EHvss1TDg#Alejandro_Capote_Cover_Letter_and_Resume" target="_blank"><i class="fas fa-download mr-2" ></i>
                     Resume Download
                     </a>
-                    <a class="btn btn-xl btn-outline-dark" href="https://www.instagram.com/alexkpot/" target="_blank"><i class="fab fa-instagram mr-2"></i>
+                    <a class="btn btn-xl btn-outline-light" href="https://www.instagram.com/alexkpot/" target="_blank"><i class="fab fa-instagram mr-2"></i>
                     My Journey So Far
                     </a>
                 </div>
@@ -163,38 +178,38 @@
             
         </div><!-- /About -->
         <!-- Contact -->
-        <form id="contactForm" action="mailto:alexkpotp@gmail.com" method="post" enctype="text/plain" class="row mt-5 row container mx-auto needs-validation" novalidate><!-- Contact -->
-            <div class="contact d-flex justify-content-center flex-column container">
-                <h3 class="display-5 mt-5 fw-bolder text-center">CONTACT ME</h3>
-                <hr class="hr-c b-5 mx-auto mb-3">
+        <form id="contactForm" action="https://formspree.io/f/mbjppwvr" method="POST" class="row mt-5 row container mx-auto needs-validation" novalidate><!-- Contact -->
+            <div class="text-smoke contact d-flex justify-content-center flex-column container">
+                <h3 class="display-5 mt-5 fw-bolder text-center text-white">CONTACT ME</h3>
+                <hr class="hr-c b-5 mx-auto text-white mb-3">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
+                    <input type="text" name="name" class="form-control" id="name" required>
                     <div class="invalid-feedback">
                             Please fill your Name
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <input type="email" name="email" class="form-control" id="email" required>
                     <div class="invalid-feedback">
                             Please fill your Email
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">Phone Number</label>
-                    <input type="" class="form-control" id="phone">
+                    <input type="number"  name="phone" class="form-control" id="phone">
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                    <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
                     <div class="invalid-feedback">
                             Please enter a message in the textarea.
                     </div>
                 </div>
                 <div id="success"></div>
                 <div class="col-12 mt-3 mb-5 text-center">
-                    <button id="sendMessageButton" class="btn btn-outline-dark" type="submit">                                
+                    <button id="sendMessageButton" name="sendButton" class="btn btn-outline-light" type="submit">                                
                         <i class="fas fa-paper-plane"></i>
                         Send
                     </button>
@@ -208,15 +223,15 @@
                     <!-- Footer Location-->
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <h5 class="text-uppercase mb-4">Location</h5>
-                        <p class=" mb-0">
+                        <p class=" mb-0 text-smoke">
                             South Florida
                             <br />
                             United States
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <h5 class="text-uppercase mb-4">Social</h5>
+                    <div class="text-smoke col-lg-6 mb-5 mb-lg-0">
+                        <h5 class="text-white text-uppercase mb-4">Social</h5>
                         <a class="btn  border-0 btn-outline-light btn-social mx-1" href="https://www.instagram.com/alexkpot/"><i class="fab fa-fw fa-instagram"></i></a>
                         <a class="btn  border-0 btn-outline-light btn-social mx-1" href="https://github.com/ManuelCapote"><i class="fab fa-fw fa-github"></i></a>
                         <a class="btn  border-0 btn-outline-light btn-social mx-1" href="https://unsplash.com/@ialexkpot"><i class="fab fa-fw fa-unsplash"></i></a>
@@ -226,7 +241,7 @@
         </footer> <!-- /Footer -->
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright ©  AlexKpot 2020</small></div>
+        <div class="text-smoke container"><small>Copyright ©  AlexKpot 2020</small></div>
     </div>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-to-top d-lg-none position-fixed">
@@ -234,11 +249,11 @@
     </div>
     <div><!-- Modal Window -->
         <!-- Modal 1 -->
-        <div class="modal fade" id="p1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="p1" tabindex="-1" aria-labelledby="exampleModalLabel00" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg"> 
                 <div class="modal-content">
                     <div class="modal-header mx-auto mt-3">
-                        <h3 class="modal-title text-center" id="exampleModalLabel">Web App Dashboard</h3>
+                        <h3 class="modal-title text-center" id="exampleModalLabel00">Web App Dashboard</h3>
                     </div>
                 <div class="modal-body">
                         <img class="portImgModal p-5 img-fluid" src="assets/img/portfolio/webapp.png" alt=""/>
@@ -264,11 +279,11 @@
             </div>
         </div>      
         <!-- Modal 2 -->
-        <div class="modal fade" id="p2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="p2" tabindex="-1" aria-labelledby="exampleModalLabel01" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg"> 
                     <div class="modal-content">
                         <div class="modal-header mx-auto mt-3">
-                            <h3 class="modal-title text-center" id="exampleModalLabel">Registration Form</h3>
+                            <h3 class="modal-title text-center" id="exampleModalLabel01">Registration Form</h3>
                         </div>
                     <div class="modal-body">
                             <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/regform.png" alt=""/>
@@ -294,15 +309,15 @@
                 </div>
             </div>      
             <!-- Modal 3 -->
-        <div class="modal fade" id="p3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="p3" tabindex="-1" aria-labelledby="exampleModalLabel02" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg"> 
                     <div class="modal-content">
                         <div class="modal-header mx-auto mt-3">
-                            <h3 class="modal-title text-center" id="exampleModalLabel">Game Show App</h3>
+                            <h3 class="modal-title text-center" id="exampleModalLabel02">Game Show App</h3>
                         </div>
                     <div class="modal-body">
                             <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/gameshowapp.png" alt=""/>
-                            <div class="d-flex pb-3">
+                            <div class="d-flex pb-1">
                                     <ul class="list-group fw-light list-group-horizontal d-flex flex-wrap justify-content-around mx-auto">
                                         <li class="list-group-item">Arrow Functions</li>
                                         <li class="list-group-item">Traversing the DOM</li>
@@ -310,7 +325,7 @@
                                         <li class="list-group-item">Template Literals</li>
                                     </ul>
                             </div>
-                            <p class="pb-3 text-center">A browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase. 
+                            <p class="text-center">A browser version of “Wheel of Success”. 
                                 Using Javascript, I have created an array of phrases and write functions to choose a random phrase from that array, split the phrase into letters, and put those letters onto the game board.</p>
                             <div class="d-flex justify-content-around pt-3 flex-row">
                                     <img class="img-svg img-fluid" src="assets/svgicons/javascript-4.svg" alt="svg javascript-4 icon">
@@ -325,11 +340,11 @@
                 </div>
             </div>          
                <!-- Modal 4 -->
-        <div class="modal fade" id="p4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="p4" tabindex="-1" aria-labelledby="exampleModalLabel03" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg"> 
                     <div class="modal-content">
                         <div class="modal-header mx-auto mt-3">
-                            <h3 class="modal-title text-center" id="exampleModalLabel">Image Gallery</h3>
+                            <h3 class="modal-title text-center" id="exampleModalLabel03">Image Gallery</h3>
                         </div>
                     <div class="modal-body">
                             <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/imggallery.png" alt=""/>
@@ -356,11 +371,11 @@
                 </div>
             </div>        
                <!-- Modal 5 -->
-        <div class="modal fade" id="p5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="p5" tabindex="-1" aria-labelledby="exampleModalLabel04" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg"> 
                     <div class="modal-content">
                         <div class="modal-header mx-auto mt-3">
-                            <h3 class="modal-title text-center" id="exampleModalLabel">Web Style Guide</h3>
+                            <h3 class="modal-title text-center" id="exampleModalLabel04">Web Style Guide</h3>
                         </div>
                     <div class="modal-body">
                             <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/webguidestyle.png" alt=""/>
@@ -386,14 +401,14 @@
                 </div>
             </div>          
                  <!-- Modal 6 -->
-        <div class="modal fade" id="p6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="p6" tabindex="-1" aria-labelledby="exampleModalLabel05" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg"> 
                     <div class="modal-content">
                         <div class="modal-header mx-auto mt-3">
-                            <h3 class="modal-title text-center" id="exampleModalLabel">Employee Directory API</h3>
+                            <h3 class="modal-title text-center" id="exampleModalLabel05">Employee Directory API</h3>
                         </div>
                     <div class="modal-body">
-                            <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/empdirectory.png" alt=""/>
+                            <img class="portImgModal p-3 img-fluid" src="assets/img/portfolio/empdirectoy.png" alt=""/>
                             <div class="d-flex pb-3">
                                     <ul class="list-group fw-light list-group-horizontal d-flex flex-wrap justify-content-around mx-auto">
                                         <li class="list-group-item">Object Oriented JS</li>
@@ -418,9 +433,6 @@
             
             
     </div><!-- /Modal Window -->
-
-    <!-- Option: Local Bootstrap -->
-    <script src="js/bootstrap.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
